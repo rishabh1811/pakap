@@ -1,0 +1,65 @@
+.bg-image {
+    background-image: url("/images/header-bg.png");
+}
+
+.container {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1320px;
+    }
+}
+
+.btn {
+    background-image: linear-gradient(44.44deg, #ED2775 7.79%, #FF7448 94.18%);
+    box-shadow: 0px 12px 35px rgba(237, 39, 117, 0.25);
+
+
+    &:hover {
+        background-image: none;
+        background-color: #ED2775;
+    }
+}
+
+.gradient-1 {
+    background: linear-gradient(45.24deg, #9F5FF1 5.99%, #FF54B0 91.87%);
+}
+
+.gradient-2 {
+    background: linear-gradient(44.44deg, #ED2775 7.79%, #FF7448 94.18%);
+}
+
+.gradient-3 {
+    background: linear-gradient(44.44deg, #3F75FF 7.79%, #4ADEFF 94.18%);
+}
+
+.gradient-4 {
+    background: linear-gradient(44.44deg, #FF4B3F 7.79%, #FFAC30 94.18%);
+}
+
+.sub-heading {
+    background: linear-gradient(44.44deg, #ED2775 7.79%, #FF7448 94.18%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
