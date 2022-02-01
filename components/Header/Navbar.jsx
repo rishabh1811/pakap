@@ -1,6 +1,7 @@
 import { HiMenuAlt2 } from "react-icons/hi";
 import Drawer from '@mui/material/Drawer';
 import { useState } from "react";
+import Link from 'next/link'
 
 
 export default function Navbar() {
@@ -9,33 +10,43 @@ export default function Navbar() {
   return (
     <>
       <div className="container flex items-center gap-x-4 py-3 992:justify-between">
-        <div className="grow 992:grow-0">
+        <div className="grow ">
           <p className="font-bold">Pakap</p>
         </div>
 
         <div className="hidden 992:block">
           <ul
-            className="flex  gap-x-6 text-base
+            className="flex  gap-x-10 mr-10 text-base
                            ">
 
             <li className="">
-              <a href="#">About Us</a>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
             </li>
             <li className="">
-              <a href="#">Store Locations</a>
+            <Link href="#pricing">
+                <a>Pricing</a>
+              </Link>
             </li>
             <li className="">
-              <a href="#">Contact</a>
+            <Link href="/contact">
+                <a>Contact</a>
+              </Link>
             </li>
-            <li className="">
+
+            {/* <li className="">
               <a href="#">Support</a>
             </li>
+
             <li className="">
               <a href="#">Policy</a>
             </li>
+
             <li className="">
               <a href="#">FAQs</a>
-            </li>
+            </li> */}
+
           </ul>
         </div>
 
