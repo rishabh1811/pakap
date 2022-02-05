@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+import Link from "next/link";
 import React from "react";
 import {
   RiAwardLine,
@@ -37,10 +39,10 @@ function Keys() {
       </p>
 
       <div className="flex justify-center gap-4">
-        <button className="btn">Start Free Trial</button>
-        <button className="underline underline-offset-2">
+        <button className="btn"><Link href="/contact"><a>Get Started</a></Link></button>
+        {/* <button className="underline underline-offset-2">
           See all features
-        </button>
+        </button> */}
       </div>
     </div>
   );

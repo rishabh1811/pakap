@@ -1,5 +1,7 @@
+import Link from "next/link";
 import React from "react";
 import { RiCheckLine, RiCloseLine } from "react-icons/ri";
+
 
 export default function Pricing() {
   return (
@@ -22,7 +24,7 @@ export default function Pricing() {
               <p className="font-semibold">Basic Plan</p>
               <p className="p-gray">Gets you started.<br /> For small to medium businesses</p>
               <p className="py-3"><span className="text-5xl font-bold">₹2499</span> /Month</p>
-              <button className="btn">Purchase Plan</button>
+              <button className="btn"><Link href="/contact"><a>Purchase Plan</a></Link></button>
               <ul className=" pt-5 space-y-2">
                 <li className=""><RiCheckLine className="inline text-xl text-green-500"/> Free Domain name</li>
                 <li className=""><RiCheckLine className="inline text-xl text-green-500"/> Unlimited Bandwidth</li>
@@ -43,7 +45,7 @@ export default function Pricing() {
               <p className="font-semibold">Premium Plan</p>
               <p className="p-gray">For Growing startups </p>
               <p className="py-3"><span className="text-5xl font-bold">₹3499</span> /Month</p>
-              <button className="btn">Purchase Plan</button>
+              <button className="btn"><Link href="/contact"><a>Purchase Plan</a></Link></button>
               <ul className=" pt-5 space-y-2">
               <li className=""><RiCheckLine className="inline text-xl text-green-500"/> Free Domain name</li>
                 <li className=""><RiCheckLine className="inline text-xl text-green-500"/> Unlimited Bandwidth</li>
@@ -63,7 +65,7 @@ export default function Pricing() {
               <p className="font-semibold">Ecommerce Store</p>
               <p className="p-gray">Powerful & awesome elements</p>
               <p className="py-3"><span className="text-5xl font-bold">₹6499</span> /Month</p>
-              <button className="btn">Purchase Plan</button>
+              <button className="btn"><Link href="/contact"><a>Purchase Plan</a></Link></button>
               <ul className=" pt-5 space-y-2">
                 <li className="pl-5 pb-2 font-semibold"> Everything in Premium plan plus </li>
                 <li className=""><RiCheckLine className="inline text-xl text-green-500"/> Content Managment System</li>

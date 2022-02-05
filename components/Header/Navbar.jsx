@@ -25,7 +25,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="">
-            <Link href="#pricing">
+            <Link href="/#pricing">
                 <a>Pricing</a>
               </Link>
             </li>
@@ -51,8 +51,12 @@ export default function Navbar() {
         </div>
 
         <div className="">
-          <button className="btn text-xs px-3 py-2 
-                            992:text-sm 992:font-normal">Get Started</button>
+          <Link href="/contact">
+            <a>
+              <button className="btn text-xs px-3 py-2
+                                992:text-sm 992:font-normal">Get Started</button>
+            </a>
+          </Link>
         </div>
 
         <div className="text-4xl 992:hidden" onClick={() => setVisible(true)}>
@@ -70,12 +74,9 @@ export default function Navbar() {
         <div className="">
             <ul className=" space-y-6 p-10 w-[70vw] capitalize text-left mt-6 text-lg
                               sm:w-[50vw] xs:w-[70vw]">
-              <li className="">home</li>
-              <li className="">shop</li>
-              <li className="">products</li>
-              <li className="">pages</li>
-              <li className="">contact</li>
-              <li className="">blog</li>
+              <li className=""><Link href="/"><a>Home</a></Link></li>
+              <li className=""><Link href="/#pricing"><a>Pricing</a></Link></li>
+              <li className=""><Link href="/contact"><a>contact</a></Link></li>
             </ul>
           </div>
       </Drawer>

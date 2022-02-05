@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import React from "react";
 
 export default function AppProgress() {
@@ -34,7 +35,7 @@ export default function AppProgress() {
               <br /> <br />A win! win! situation for you and your customers.
             </p>
             <div>
-              <button className="btn mt-6">Get Started</button>
+              <button className="btn mt-6"><Link href="/contact"><a>Get Started</a></Link></button>
             </div>
           </div>
         </div>

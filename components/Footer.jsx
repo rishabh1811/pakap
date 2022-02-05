@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { useState } from "react";
+import Link from "next/link";
 export default function Footer() {
   return (
     <>
@@ -23,24 +24,21 @@ export default function Footer() {
           className="flex flex-wrap gap-x-10 justify-center text-lg
                           mb-12 gap-y-4"
         >
-          <li className="">
-            <a href="#">About Us</a>
-          </li>
-          <li className="">
-            <a href="#">Store Locations</a>
-          </li>
-          <li className="">
-            <a href="#">Contact</a>
-          </li>
-          <li className="">
-            <a href="#">Support</a>
-          </li>
-          <li className="">
-            <a href="#">Policy</a>
-          </li>
-          <li className="">
-            <a href="#">FAQs</a>
-          </li>
+         <li className="">
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li className="">
+            <Link href="/#pricing">
+                <a>Pricing</a>
+              </Link>
+            </li>
+            <li className="">
+            <Link href="/contact">
+                <a>Contact</a>
+              </Link>
+            </li>
         </ul>
 
         {/* <div

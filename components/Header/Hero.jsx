@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import React from "react";
 
 export default function Hero() {
@@ -21,7 +22,7 @@ export default function Hero() {
               Digital marketing, Logo designing so on. We also provide Ads
               Compaigns on Google Search, Youtube, Instagram.
             </p>
-            <button className="btn ">Get Started</button>
+            <button className="btn "><Link href="/contact"><a>Get Started</a></Link></button>
           </div>
 
           <div className="">
