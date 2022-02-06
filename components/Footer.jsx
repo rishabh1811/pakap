@@ -7,12 +7,18 @@ import {
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { useState } from "react";
 import Link from "next/link";
-export default function Footer() {
+export default function Footer({bg}) {
+
+  var footerClass = "";
+  if(!bg){
+      footerClass = "container-fluid  p-10 bg-lightBlue"
+  } else {
+    footerClass = `container-fluid  p-10 ${bg}`
+  }
   return (
     <>
       <div
-        className="container-fluid bg-lightBlue
-                          p-10"
+        className={footerClass}
       >
         <h2
           className="text-3xl text-center tracking-wider
@@ -37,6 +43,11 @@ export default function Footer() {
             <li className="">
             <Link href="/contact">
                 <a>Contact</a>
+              </Link>
+            </li>
+            <li className="">
+            <Link href="/services">
+                <a>services</a>
               </Link>
             </li>
         </ul>

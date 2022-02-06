@@ -34,11 +34,12 @@ function Keys() {
         leads to angry customers. This is bad for business. Also, Google hates
         slow websites and pushes them to next pages.
         <br />
+        <br />
         Hence, we build websites with React.Js, the same technology behind
         Facebook, Instagram and Airbnb. We promise excellent score on GTmetrix.
       </p>
 
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4 992:pt-4 992:justify-start">
         <button className="btn"><Link href="/contact"><a>Get Started</a></Link></button>
         {/* <button className="underline underline-offset-2">
           See all features

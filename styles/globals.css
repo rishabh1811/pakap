@@ -26,7 +26,15 @@
   }
 
   .p-gray {
-    @apply text-gray-500 text-sm
+    @apply text-gray-500 text-sm 992:text-base
+  }
+
+  .question {
+    @apply text-lg font-semibold  pb-2
+  }
+
+  .answer {
+    @apply text-base 576:mb-2
   }
 }
 

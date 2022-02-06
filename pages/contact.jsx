@@ -5,6 +5,7 @@ import Form from "../components/Form";
 import GradientWrapper from "../components/GradientWrapper";
 import Navbar from "../components/Header/Navbar";
 import Footer from "../components/Footer"
+import Link from "next/link";
 
 export default function ContactPage(props) {
   return (
@@ -16,7 +17,7 @@ export default function ContactPage(props) {
         <hr className="border-white opacity-20" />
         <div className="pt-[4.2rem] pb-[3rem] space-y-6">
           <h1 className="heading  text-center text-white">Contact Us</h1>
-          <p className="text-white text-center text-sm">Home | Contact Us</p>
+          <p className="text-white text-center text-sm"><Link href="/"><a>Home</a></Link> | Contact Us</p>
         </div>
       </GradientWrapper>
 

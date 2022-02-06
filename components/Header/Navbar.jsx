@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import { HiMenuAlt2 } from "react-icons/hi";
 import Drawer from '@mui/material/Drawer';
 import { useState } from "react";
 import Link from 'next/link'
+import Svg from "../Svg";
 
 
 export default function Navbar() {
@@ -11,7 +13,9 @@ export default function Navbar() {
     <>
       <div className="container flex items-center gap-x-4 py-3 992:justify-between">
         <div className="grow ">
-          <p className="font-bold">Pakap</p>
+          <div className="">
+           <Link href="/"><a><Svg /></a></Link>
+          </div>
         </div>
 
         <div className="hidden 992:block">
@@ -32,6 +36,11 @@ export default function Navbar() {
             <li className="">
             <Link href="/contact">
                 <a>Contact</a>
+              </Link>
+            </li>
+            <li className="">
+            <Link href="/services">
+                <a>Services</a>
               </Link>
             </li>
 

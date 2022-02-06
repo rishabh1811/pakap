@@ -14,7 +14,7 @@ export default function Hero() {
             <p className="text-[#ED2775] text-sm font-semibold">
               Professional, Fast and SEO Optimized
             </p>
-            <h1 className="heading ">
+            <h1 className="heading 992:text-5xl">
               We develop Professional Websites suitable for your business needs
             </h1>
             <p className="p-gray">
@@ -25,8 +25,9 @@ export default function Hero() {
             <button className="btn "><Link href="/contact"><a>Get Started</a></Link></button>
           </div>
 
-          <div className="">
+          <div className="relative">
             <img src="/images/img1.png" alt="" />
+            <img className="hidden 1200:block absolute bottom-0 right-0 -z-10 animate-moveinbounce" src="/images/shape11.png" alt="" />
           </div>
         </div>
       </div>
