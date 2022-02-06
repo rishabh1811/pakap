@@ -56,7 +56,7 @@ function Icons2() {
                         576:grid-cols-2 992:text-left"
     >
       <div className="flex flex-col items-center gap-3 992:items-start">
-        <div className="gradient-1 rounded-full w-[60px] h-[60px] grid place-items-center  p-4">
+        <div className="gradient-1 rounded-full w-[60px] h-[60px] grid place-items-center  p-4 justify-center content-center">
           <RiSmartphoneLine className="text-3xl text-white" />
         </div>
         <p className="font-semibold ">React.js</p>
@@ -68,7 +68,7 @@ function Icons2() {
       </div>
 
       <div className="flex flex-col items-center gap-3 992:items-start">
-        <div className="gradient-2 rounded-full w-[60px] h-[60px] grid place-items-center  p-4">
+        <div className="gradient-2 rounded-full w-[60px] h-[60px] grid place-items-center  p-4 justify-center content-center">
           <RiAwardLine className="text-3xl text-white" />
         </div>
         <p className="font-semibold ">Core Web Vitals</p>
@@ -79,7 +79,7 @@ function Icons2() {
       </div>
 
       <div className="flex flex-col items-center gap-3 992:items-start">
-        <div className="gradient-3 rounded-full w-[60px] h-[60px] grid place-items-center  p-4">
+        <div className="gradient-3 rounded-full w-[60px] h-[60px] grid place-items-center  p-4 justify-center content-center">
           <RiFingerprintLine className="text-3xl text-white" />
         </div>
         <p className="font-semibold ">Mobile Optimized</p>
@@ -97,7 +97,7 @@ function Icons2() {
       </div>
 
       <div className="flex flex-col items-center gap-3 992:items-start">
-        <div className="gradient-4 rounded-full w-[60px] h-[60px] grid place-items-center  p-4">
+        <div className="gradient-4 rounded-full w-[60px] h-[60px] grid place-items-center  p-4 justify-center content-center">
           <RiVipDiamondLine className="text-3xl text-white" />
         </div>
         <p className="font-semibold ">Search Engine Optimized</p>
