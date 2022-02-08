@@ -17,7 +17,7 @@ export default function Services() {
     <>
       <GradientWrapper>
         <div className="text-white">
-          <Navbar />
+          <Navbar color="white"/>
         </div>
         <hr className="border-white opacity-20" />
         <div className="pt-[4.2rem] pb-[3rem] space-y-6">

@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Svg from "../Svg";
 
 
-export default function Navbar() {
+export default function Navbar({color}) {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="container flex  items-center gap-x-4 py-3 992:justify-between">
         <div className="grow ">
           <div className="">
-           <Link href="/"><a><Svg /></a></Link>
+           <Link href="/"><a><Svg color={color}/></a></Link>
           </div>
         </div>
 
@@ -25,22 +25,22 @@ export default function Navbar() {
 
             <li className="">
               <Link href="/">
-                <a>Home</a>
+                <a className="hover:text-[#ED2775]">Home</a>
               </Link>
             </li>
             <li className="">
             <Link href="/#pricing">
-                <a>Pricing</a>
+                <a className="hover:text-[#ED2775]">Pricing</a>
               </Link>
             </li>
             <li className="">
             <Link href="/contact">
-                <a>Contact</a>
+                <a className="hover:text-[#ED2775]">Contact</a>
               </Link>
             </li>
             <li className="">
             <Link href="/services">
-                <a>Services</a>
+                <a className="hover:text-[#ED2775]">Services</a>
               </Link>
             </li>
 
