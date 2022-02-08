@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import AppProgress from "../components/AppProgress";
 import Contact from "../components/Contact";
 import Features from "../components/Features";
@@ -22,6 +23,25 @@ export default function Home() {
       <Pricing />
       <Contact />
       <Footer />
+
+      {/* seo */}
+    <NextSeo
+      title="No.1 Web Development company | Website Design company Delhi | RG Web"
+      description="Create your custom website with best designers. No.1 Website Development Company in Delhi NCR.
+      Free consultation. Website @ ₹2499"
+      // canonical="https://www.canonical.ie/"
+      openGraph={{
+        //url: 'https://www.url.ie/a',
+        title: `No.1 Web Development company | Website Design company Delhi`,
+        description: `Create your custom website with best designers. No.1 Website Development Company in Delhi NCR.
+        Free consultation. Website @ ₹2499`,
+        images: [
+          { url: "https://rgweb.in/images/logo/vslogo-colored.png" }
+        ],
+        site_name: 'Website Design company Delhi | RG Web',
+      }}
+    />
+    {/* /seo */}
     </>
   );
 }

@@ -11,6 +11,7 @@ import Navbar from "../components/Header/Navbar";
 import Footer from "../components/Footer"
 import Link from "next/link";
 import Form from "../components/Form";
+import { NextSeo } from "next-seo";
 
 export default function Services() {
   return (
@@ -187,6 +188,26 @@ export default function Services() {
       </section>
 
       <Footer />
+
+
+
+       {/* seo */}
+    <NextSeo
+      title="Services | RG Web"
+      description="We Design Fully-Optimized Responsive & Modern Websites. Ecommerce online stores. SEO services"
+      // canonical="https://www.canonical.ie/"
+      openGraph={{
+        //url: 'https://www.url.ie/a',
+        title: `No.1 Web Development company | Website Design company Delhi`,
+        description: `Create your custom website with best designers. No.1 Website Development Company in Delhi NCR.
+        Free consultation. Website @ ₹2499`,
+        images: [
+          { url: "https://rgweb.in/images/logo/vslogo-colored.png" }
+        ],
+        site_name: 'Website Design company Delhi | RG Web',
+      }}
+    />
+    {/* /seo */}
     </>
   );
 }
