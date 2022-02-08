@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="container flex items-center gap-x-4 py-3 992:justify-between">
+      <div className="container flex  items-center gap-x-4 py-3 992:justify-between">
         <div className="grow ">
           <div className="">
            <Link href="/"><a><Svg /></a></Link>
