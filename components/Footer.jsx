@@ -3,11 +3,18 @@ import {
   FaInstagram,
   FaGithub,
   FaTwitter,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
+
 export default function Footer({bg}) {
+
+  
+
 
   var footerClass = "";
   if(!bg){
@@ -109,6 +116,8 @@ export default function Footer({bg}) {
 function ScrollToTopButton() {
   const [visible, setVisible] = useState(false);
 
+  const router = useRouter()
+
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
     if (scrolled > 300) {
@@ -123,22 +132,23 @@ function ScrollToTopButton() {
   }
 
   const clickHandler = () => {
-    document.documentElement.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
+    router.push("https://wa.me/919971763478?text=I%20want%20a%20website")
+    
   };
 
   return (
     <>
       <button
         className={`w-11 h-11 ml-[100%] text-xl rounded-full 
-        bg-black text-white
-        hover:bg-zinc-700 hover:duration-300
+         text-white
         transition duration-[.6s]
         fixed bottom-14 right-12 z-10
         ${visible ? "translate-y-0 opacity-100" : "translate-y-32 opacity-0"}`}
         onClick={clickHandler}
         // style={{display: visible ? 'inline' : 'none'}}
       >
-        <AiOutlineArrowUp className="mx-auto  " />
+        <img src="/images/wa.svg" alt="" />
       </button>
     </>
   );
