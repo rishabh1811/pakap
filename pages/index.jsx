@@ -19,7 +19,7 @@ export default function Home() {
 
       <Features />
       <Features2 />
-      <AppProgress />
+      <AppProgress /> 
       <Pricing />
       <Contact />
       <Footer />
@@ -34,7 +34,7 @@ export default function Home() {
         //url: 'https://www.url.ie/a',
         title: `No.1 Web Development company | Website Design company Delhi`,
         description: `Create your custom website with best designers. No.1 Website Development Company in Delhi NCR.
-        Free consultation. Website @ ₹2499`,
+        Free consultation. Website @ ₹2499 `,
         images: [
           { url: "https://rgweb.in/images/logo/vslogo-colored.png" }
         ],
