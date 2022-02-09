@@ -35,7 +35,7 @@ export default function Pricing() {
                 <li className=""><RiCheckLine className="inline text-xl text-green-500"/> Google Analytics</li>
                 <li className=""><RiCheckLine className="inline text-xl text-yellow-400"/> Upto 5 pages</li>
                 <li className=""><RiCheckLine className="inline text-xl text-yellow-400"/> Basic Image Optimization</li>
-                <li className=""><RiCloseLine className="inline text-xl text-red-500"/> Free CDN</li>
+                {/* <li className=""><RiCloseLine className="inline text-xl text-red-500"/> Free CDN</li> */}
               </ul>
             </div>
     
@@ -64,7 +64,7 @@ export default function Pricing() {
             <div className="card border border-[#eee] p-5 shadow-md space-y-2">
               <p className="font-semibold">Ecommerce Store</p>
               <p className="p-gray">Powerful & awesome elements</p>
-              <p className="py-3"><span className="text-5xl font-bold">₹6499</span> /Month</p>
+              <p className="py-3"><span className="text-5xl font-bold">₹4499</span> /Month</p>
               <button className="btn"><Link href="/contact"><a>Purchase Plan</a></Link></button>
               <ul className=" pt-5 space-y-2">
                 <li className="pl-5 pb-2 font-semibold"> Everything in Premium plan plus </li>

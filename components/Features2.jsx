@@ -12,7 +12,7 @@ export default function Features2() {
   return (
     <>
       <div
-        className="container flex flex-col 
+        className="container grid grid-cols-1 
                    992:grid 992:grid-cols-2 gap-12
                    mb-[100px]"
       >

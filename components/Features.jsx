@@ -24,28 +24,28 @@ function Icons() {
       className="grid grid-cols-2 justify-items-center gap-4
                       576:grid-cols-4"
     >
-      <div className="flex flex-col items-center gap-3">
+      <div className="grid content-center justify-center justify-items-center items-center gap-3">
         <div className="gradient-1 rounded-full w-[60px] h-[60px] grid place-items-center justify-center content-center  p-4">
           <RiSmartphoneLine className="text-3xl text-white" />
         </div>
         <p className="text-center font-semibold ">Mobile First Design</p>
       </div>
 
-      <div className="flex flex-col items-center gap-3">
+      <div className="grid content-center justify-center justify-items-center items-center gap-3">
         <div className="gradient-2 rounded-full w-[60px] h-[60px] grid place-items-center justify-center content-center  p-4">
           <RiAwardLine className="text-3xl text-white" />
         </div>
         <p className="text-center font-semibold ">90+ Lighthouse Score</p>
       </div>
 
-      <div className="flex flex-col items-center gap-3">
+      <div className="grid content-center justify-center justify-items-center items-center gap-3">
         <div className="gradient-3 rounded-full w-[60px] h-[60px] grid place-items-center justify-center content-center  p-4">
           <RiPulseLine className="text-3xl text-white" />
         </div>
         <p className="text-center font-semibold ">SEO Optimized</p>
       </div>
 
-      <div className="flex flex-col items-center gap-3">
+      <div className="grid content-center justify-center justify-items-center items-center gap-3">
         <div className="gradient-4 rounded-full w-[60px] h-[60px] grid place-items-center justify-center content-center  p-4">
           <GoGlobe className="text-3xl text-white" />
         </div>

@@ -7,7 +7,7 @@ export default function AppProgress() {
     <>
       <div className="bg-black">
         <div
-          className="container flex flex-col
+          className="container grid grid-cols-1
                        992:grid 992:grid-cols-2 gap-12
                        py-20 
                        "

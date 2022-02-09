@@ -24,28 +24,28 @@ export default function Footer({bg}) {
           className="text-3xl text-center tracking-wider
                           mb-10"
         >
-          PAKAP
+          RGweb
         </h2>
         <ul
-          className="flex flex-wrap gap-x-10 justify-center text-lg
-                          mb-12 gap-y-4"
+          className="flex flex-col items-center 576:flex-row flex-wrap  justify-center text-lg
+                          mb-12 "
         >
-         <li className="">
+         <li className="mx-5 my-2">
               <Link href="/">
                 <a>Home</a>
               </Link>
             </li>
-            <li className="">
+            <li className="mx-5 my-2">
             <Link href="/#pricing">
                 <a>Pricing</a>
               </Link>
             </li>
-            <li className="">
+            <li className="mx-5 my-2">
             <Link href="/contact">
                 <a>Contact</a>
               </Link>
             </li>
-            <li className="">
+            <li className="mx-5 my-2">
             <Link href="/services">
                 <a>services</a>
               </Link>
@@ -75,7 +75,7 @@ export default function Footer({bg}) {
         </div> */}
 
         <div
-          className="flex gap-x-7 justify-center
+          className="flex max-w-[300px] justify-around mx-auto
                         mt-14 text-gray-500 "
         >
           <button className="h-11 w-11 bg-white hover:text-black transition-colors">
@@ -96,8 +96,8 @@ export default function Footer({bg}) {
           </button>
         </div>
         <p className="mt-14 mb-14 text-gray-500 text-center">
-          © 2020 lusion. All Rights Reserved | (+00) 123 567990 |
-          contact@lusion.com
+          © 2022 RGweb.in | All Rights Reserved <br />
+          Designed with ❤️ by <Link href="/"><a className="underline underline-offset-1">RGweb.in</a></Link>
         </p>
 
         <ScrollToTopButton />
