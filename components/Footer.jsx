@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   FaFacebookF,
   FaInstagram,
@@ -5,7 +6,6 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
-import { AiOutlineArrowUp } from "react-icons/ai";
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
