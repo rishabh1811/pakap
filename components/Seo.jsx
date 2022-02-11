@@ -1,11 +1,22 @@
 import { LocalBusinessJsonLd, NextSeo } from 'next-seo'
-import React from 'react'
 
 export default function Seo(props) {
     
 
     return (
         <>
+{/* google tag manager */}
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NL89B8K"
+
+height={0}
+width={0}
+  className="hidden invisible"></iframe></noscript>
+
+
+
+
+
 {/* Basic SEO */}
 <NextSeo
       title="No.1 Web Development company | Website Design company Delhi | RG Web"
@@ -27,7 +38,7 @@ export default function Seo(props) {
 {/* JSON-LD */}
 
 <LocalBusinessJsonLd
-  type="Website Designer"
+  type="Store"
   id="https://rgweb.in"
   name="RGweb Web Development company"
   description="We build beautiful professional websites for you. No.1 Website Development Company in Delhi NCR.
@@ -51,6 +62,7 @@ export default function Seo(props) {
     'https://rgweb.in/images/google3.webp',
 
   ]}
+  priceRange="$"
   openingHours={[
     {
       opens: '08:00',
