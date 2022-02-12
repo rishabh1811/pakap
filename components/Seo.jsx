@@ -38,7 +38,7 @@ width={0}
 {/* JSON-LD */}
 
 <LocalBusinessJsonLd
-  type="Store"
+  type="LocalBusiness"
   id="https://rgweb.in"
   name="RGweb Web Development company"
   description="We build beautiful professional websites for you. No.1 Website Development Company in Delhi NCR.
@@ -150,6 +150,20 @@ width={0}
       },
     },
   ]}
+
+
+  areaServed={[
+    {
+      geoMidpoint: {
+        latitude: '28.634189',
+        longitude: '77.283200',
+      },
+      geoRadius: '1000',
+    },
+  ]}
+
+
+  
 //   areaServed={[
 //     {
 //       geoMidpoint: {
@@ -172,6 +186,8 @@ width={0}
 //     actionType: 'ReviewAction',
 //     target: 'https://www.example.com/review/this/business',
 //   }}
+
+
 />
 
 
