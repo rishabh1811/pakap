@@ -37,22 +37,22 @@ export default function Footer({bg}) {
           className="flex flex-col items-center 576:flex-row flex-wrap  justify-center text-lg
                           mb-12 "
         >
-         <li className="mx-5 my-2">
+         <li className="mx-5 my-3">
               <Link href="/">
                 <a>Home</a>
               </Link>
             </li>
-            <li className="mx-5 my-2">
+            <li className="mx-5 my-3">
             <Link href="/#pricing">
                 <a>Pricing</a>
               </Link>
             </li>
-            <li className="mx-5 my-2">
+            <li className="mx-5 my-3">
             <Link href="/contact">
                 <a>Contact</a>
               </Link>
             </li>
-            <li className="mx-5 my-2">
+            <li className="mx-5 my-3">
             <Link href="/services">
                 <a>services</a>
               </Link>

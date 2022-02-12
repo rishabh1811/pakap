@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
+// import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -22,12 +24,28 @@ export default function Hero() {
               Digital marketing, Logo designing so on. We also provide Ads
               Compaigns on Google Search, Youtube, Instagram.
             </p>
-            <button className="btn "><Link href="/contact"><a>Get Started</a></Link></button>
+            <button className="btn ">
+              <Link href="/contact">
+                <a>Get Started</a>
+              </Link>
+            </button>
           </div>
 
           <div className="relative">
-            <img src="/images/img1.png" alt="" />
-            <img className="hidden 1200:block absolute bottom-0 right-0 -z-10 animate-moveinbounce" src="/images/shape11.png" alt="" />
+            {/* <img src="/images/img1.png" alt="website demo" /> */}
+
+            <picture >
+              <source srcSet="/images/img1.webp" type="image/webp" />
+              <img src="/images/img1.jpg" alt="website demo" />
+            </picture>
+            
+           
+
+            <img
+              className="hidden 1200:block absolute bottom-0 right-0 -z-10 animate-moveinbounce"
+              src="/images/shape11.png"
+              alt=""
+            />
           </div>
         </div>
       </div>

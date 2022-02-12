@@ -44,7 +44,7 @@ export default function Contact() {
             We will contact you about your requirements
           </h1>
           <input
-            className="rounded-3xl py-3 px-4 block mx-auto mb-4 text-black"
+            className="rounded-3xl py-3 px-4 block mx-auto mb-6 text-black"
             type="text"
             name="mobile"
             id="mobile"
