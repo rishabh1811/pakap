@@ -27,7 +27,7 @@
   }
 
   .p-gray {
-    @apply text-gray-500 text-sm 992:text-base
+    @apply text-gray-500 text-base 992:text-base
   }
 
   .question {

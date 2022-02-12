@@ -1,5 +1,11 @@
 .bg-image {
-    background-image: url("/images/header-bg.png");
+    background-color: #EFF5FC;
+    
+    @media (min-width: 992px) {
+        background-image: url("/images/header-bg.png");
+        background-size: cover;
+        background-color: initial;
+    }
 }
 
 .container {
