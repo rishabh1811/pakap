@@ -42,7 +42,7 @@ width={0}
   id="https://rgweb.in"
   name="RGweb Web Development company"
   description="We build beautiful professional websites for you. No.1 Website Development Company in Delhi NCR.
-  Free consultation. Website @ ₹2499"
+  Free consultation. Call 9971763478"
   url="https://rgweb.in"
   telephone="+919971763478"
   address={{
