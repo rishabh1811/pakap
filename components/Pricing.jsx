@@ -20,7 +20,7 @@ export default function Pricing() {
                         992:grid-cols-3 ">
     
                 {/* CARD */}
-            <div className="card border border-[#eee] p-5 shadow-md space-y-2">
+            <div className="card border border-[#eee] p-5 shadow-md space-y-2 992:hover:scale-105 transition duration-300">
               <p className="font-semibold">Basic Plan</p>
               <p className="p-gray">Gets you started.<br /> For small to medium businesses</p>
               <p className="py-3"><span className="text-5xl font-bold">₹2499</span> /Month</p>
@@ -41,7 +41,7 @@ export default function Pricing() {
     
                 {/* CARD */}
             <div className="card border border-[#eee] p-5 shadow-md space-y-2
-                            992:scale-105">
+                            992:scale-105 992:hover:scale-110 transition duration-300">
               <p className="font-semibold">Premium Plan</p>
               <p className="p-gray">For Growing startups </p>
               <p className="py-3"><span className="text-5xl font-bold">₹3499</span> /Month</p>
@@ -61,7 +61,7 @@ export default function Pricing() {
             </div>
     
                 {/* CARD */}
-            <div className="card border border-[#eee] p-5 shadow-md space-y-2">
+            <div className="card border border-[#eee] p-5 shadow-md space-y-2 992:hover:scale-105 transition duration-300">
               <p className="font-semibold">Ecommerce Store</p>
               <p className="p-gray">Powerful & awesome elements</p>
               <p className="py-3"><span className="text-5xl font-bold">₹4499</span> /Month</p>

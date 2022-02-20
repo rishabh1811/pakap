@@ -23,22 +23,22 @@ export default function Navbar({color}) {
           >
             <li className="">
               <Link href="/">
-                <a className="hover:text-[#ED2775]">Home</a>
+                <a className="hover:text-[#ED2775] hover:underline underline-offset-2">Home</a>
               </Link>
             </li>
             <li className="">
               <Link href="/#pricing">
-                <a className="hover:text-[#ED2775]">Pricing</a>
+                <a className="hover:text-[#ED2775] hover:underline underline-offset-2">Pricing</a>
               </Link>
             </li>
             <li className="">
               <Link href="/contact">
-                <a className="hover:text-[#ED2775]">Contact</a>
+                <a className="hover:text-[#ED2775] hover:underline underline-offset-2">Contact</a>
               </Link>
             </li>
             <li className="">
               <Link href="/services">
-                <a className="hover:text-[#ED2775]">Services</a>
+                <a className="hover:text-[#ED2775] hover:underline underline-offset-2">Services</a>
               </Link>
             </li>
 

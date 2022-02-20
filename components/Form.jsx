@@ -1,4 +1,4 @@
-import { Modal, TextField } from "@mui/material";
+import { CircularProgress, Modal, TextField } from "@mui/material";
 import axios from "axios";
 import { useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
@@ -10,12 +10,14 @@ export default function Form() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [loading, setLoading] = useState(false)
 
   const url = "https://asia-south1-pakap-9e920.cloudfunctions.net/expressApp"
  
 
   const submitHandler = async (e) => {
     e.preventDefault()
+    setLoading(true)
     const name = e.currentTarget.name.value
     const email = e.currentTarget.email.value
     const number = e.currentTarget.number.value
@@ -26,6 +28,7 @@ export default function Form() {
       email,
       number,
       message,
+      time: new Date().toLocaleString(), 
     }
 
    try {
@@ -38,7 +41,11 @@ export default function Form() {
       url: `${url}/form`,
       data: payload
     })
-    .then(res => console.log(res))
+    .then(res => {
+      console.log(res)
+      setLoading(false)
+      handleOpen()
+    })
     .catch(err => console.log("axios error :", err))  
 
 
@@ -48,7 +55,7 @@ export default function Form() {
    }
 
 
-   handleOpen()
+   
    e.currentTarget.reset();
 
   }
@@ -90,7 +97,9 @@ export default function Form() {
             fullWidth
           />
 
-          <button className="btn mx-auto">Request Call</button>
+          <button className="btn mx-auto">
+          {loading ?  <CircularProgress color="primary" size={16} /> :  "Request Call" }
+          </button>
         </form>
       </div>
 

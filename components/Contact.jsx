@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Modal } from "@mui/material";
+import { CircularProgress, Modal } from "@mui/material";
 import axios from "axios";
 import { useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
@@ -11,27 +11,37 @@ export default function Contact() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [loading, setLoading] = useState(false)
 
   const changeHandler = (e) => {
     setNumber(e.target.value);
   };
 
   const clickHandler = () => {
+    setLoading(true)
+
     const url = "https://asia-south1-pakap-9e920.cloudfunctions.net/expressApp";
-    // const url = "https://jsonplaceholder.typicode.com/todos/1";
-    const payload = { number };
+    const payload = { 
+      number,
+      time: new Date().toLocaleString(),
+    }
+
     console.log("Payload :", payload);
 
     try {
       axios
         .post(`${url}/number`, payload)
-        .then((res) => console.log(res))
+        .then((res) => {
+          console.log(res)
+          setLoading(false)
+          handleOpen()
+        })
         .catch((err) => console.log(err));
     } catch (error) {
       console.log(error);
     }
 
-    handleOpen()
+   
     setNumber("")
   };
 
@@ -54,7 +64,7 @@ export default function Contact() {
             onChange={changeHandler}
           />
           <button onClick={clickHandler} className="btn z-10">
-            Request Call
+            {loading ?  <CircularProgress color="primary" size={16} /> :  "Request Call" }
           </button>
           <img
             className="absolute bottom-1 left-1  -z-10"
