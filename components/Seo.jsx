@@ -27,9 +27,9 @@ width={0}
         //url: 'https://www.url.ie/a',
         title: `No.1 Web Development company | Website Design company Delhi`,
         description: `Create your custom website with best designers. No.1 Website Development Company in Delhi NCR.
-        Free consultation. Website @ ₹2499 `,
+        Free domain and hosting`,
         images: [
-          { url: "https://rgweb.in/images/logo/vslogo-colored.png" }
+          { url: "https://rgweb.in/images/og.png" }
         ],
         site_name: 'Website Design company Delhi | RG Web',
       }}
